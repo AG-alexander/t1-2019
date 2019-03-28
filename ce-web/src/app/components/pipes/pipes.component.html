@@ -1,0 +1,69 @@
+<h2>Pipes comunes</h2>
+<tr>
+  <th colspan="2" class="text-center">Uppercase</th>
+</tr>
+<tr>
+  <th>{{nombre}}</th>
+  <td>{{nombre | uppercase}}</td>
+</tr>
+<tr>
+  <th colspan="2" class="text-center">Lowercase</th>
+</tr>
+<tr>
+  <th>{{curso}}</th>
+  <td>{{curso | lowercase}}</td>
+</tr>
+<tr>
+  <th colspan="2" class="text-center">Slice</th>
+</tr>
+<tr>
+  <th>{{nombre}}</th>
+  <td>{{nombre | slice:0:2}}</td>
+</tr>
+<tr>
+  <th colspan="2" class="text-center">Number</th>
+</tr>
+<tr>
+  <th>{{number}}</th>
+  <td>{{number | number:'4.5'}}</td>
+</tr>
+<tr>
+  <th colspan="2" class="text-center">Date</th>
+</tr>
+<tr>
+  <th>{{fechaNacimiento}}</th>
+  <td>{{fechaNacimiento | date:'MMMM d, y, h:mm:ss a z'}}</td>
+</tr>
+<tr>
+  <th colspan="2" class="text-center">Date</th>
+</tr>
+<tr>
+  <th>{{fechaActual}}</th>
+  <td>{{fechaActual | date:'MMMM d, y, h:mm:ss a z'}}</td>
+</tr>
+<tr>
+  <th colspan="2" class="text-center">Currency</th>
+</tr>
+<tr>
+  <th>{{dinero}}</th>
+  <td>{{dinero | currency}}</td>
+</tr>
+<tr>
+  <th colspan="2" class="text-center">Json</th>
+</tr>
+<tr *ngFor="let item of noticias">
+  <th>{{item}}</th>
+  <td>{{item | json}}</td>
+</tr>
+<tr>
+  <th colspan="2" class="text-center">Json</th>
+</tr>
+<tr>
+  <td>
+    <pre>{{noticias$ | async | json}}</pre>
+  </td>
+</tr>
+<h1>Video Incrustado</h1>
+
+<iframe width="560" height="315" [src]="urlYoutube | domSecurity" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen></iframe>

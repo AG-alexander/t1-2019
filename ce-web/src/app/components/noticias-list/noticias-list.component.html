@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-12">
+    <carousel *ngIf="flagNoticias">
+      <slide *ngFor="let noticia of noticias">
+        <img src="../../../assets/{{noticia.imagen}}" alt="first slide" style="display: block; width: 100%;">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>{{noticia.titulo}}</h3>
+          <p>{{noticia.descripcion}}</p>
+          <button class="btn">
+            <a routerLink="/private/noticias-edit/{{noticia.id}}"> <fa name="edit"></fa></a>         
+          </button>
+        </div>
+      </slide>
+    </carousel>
+    <alert type="warning" *ngIf="!flagNoticias">
+      <strong>Warning!</strong> No se han encontrado noticias
+    </alert>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-principal">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/private/noticias-list">Lista</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/private/noticias-insert">Agregar</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/acerca-de">Acerca de</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/login">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/pipes">Pipes</a>
+            </li>
+            <li>
+                <button class="btn btn-primary btn-lgk" (click)="logout()">
+                    Logout
+                </button>
+            </li>
+        </ul>
+    </div>
+</nav>

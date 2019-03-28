@@ -1,0 +1,15 @@
+<p>
+  horarios-list works!
+</p>
+<div class="row">
+  <div class="col-4">
+    <input type="number" max="12" min="-11" [(ngModel)]="huso">
+  </div>
+  <div class="col-4">
+    <button class="btn btn-primary" (click)="add()">Add</button>
+  </div>
+</div>
+<div *ngFor="let re of reloj">
+  <app-reloj  [huso]="huso" (dateEmitter)="showDate($event)"></app-reloj>
+</div>
+

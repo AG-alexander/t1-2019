@@ -1,0 +1,30 @@
+<div class="login-background div-height-width">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <h1>Welcome to alex taller #1</h1>
+            <hr class="colored">
+            <form [formGroup]="formGroup" id="formGroup" class="row">
+                <div class="form-group col-12">
+                    <input type="text" class="form-control" formControlName="user" id="user" placeholder="user">
+                    <div *ngIf="formGroup.controls['user'].dirty">
+                        <div class="form-control-feedback text-danger" *ngIf="formGroup.controls['user'].errors?.required">
+                            The user is required
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-12">
+                    <input type="text" class="form-control" formControlName="password" id="password" placeholder="password">
+                    <div *ngIf="formGroup.controls['password'].dirty">
+                        <div class="form-control-feedback text-danger" *ngIf="formGroup.controls['password'].errors?.required">
+                            The password is required
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <button class="btn btn-primary btn-lg btn-block" (click)="login()">Login</button>
+            <button class="btn btn-primary btn-lg btn-block" (click)="loginFacebook()">Facebook</button>
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>

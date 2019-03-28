@@ -1,0 +1,26 @@
+[
+    {
+        "id": 0,
+	    "titulo": "Noticia#1",
+	    "imagen": "/images/img.jpg",
+	    "descripcion": "Bosque de mango",
+	    "fechaCreacion": "1968-11-16T00:00:00",
+	    "ultimaModificacion": "1968-11-16T00:00:00" 
+    },
+    {
+        "id": 1,
+	    "titulo": "Noticia#2",
+	    "imagen": "/images/img.jpg",
+	    "descripcion": "Montes de venormenta",
+	    "fechaCreacion": "1968-11-16T00:00:00",
+	    "ultimaModificacion": "1968-11-16T00:00:00" 
+    },
+    {
+        "id": 2,
+	    "titulo": "Noticia#3",
+	    "imagen": "/images/img.jpg",
+	    "descripcion": "Rios de chocolate",
+	    "fechaCreacion": "1968-11-16T00:00:00",
+	    "ultimaModificacion": "1968-11-16T00:00:00" 
+    }
+]
